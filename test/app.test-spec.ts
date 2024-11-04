@@ -16,7 +16,7 @@ describe('AppController', () => {
 
     app = moduleFixture.createNestApplication();
     jwtService = app.get<JwtService>(JwtService);
-    token = jwtService.sign({ email: 'rest@bk.ru' });
+    token = jwtService.sign({ email: 'babai@bk.ru' });
     await app.init();
   });
 
@@ -89,7 +89,7 @@ describe('AppController', () => {
       .expect(200)
       .expect(({ body }) => {
         expect(body.article).toHaveLength(2);
-        expect(body.article[0].article_email).toEqual('rest@bk.ru');
+        expect(body.article[0].article_email).toEqual('babai@bk.ru');
       });
   });
 

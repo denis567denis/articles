@@ -82,7 +82,7 @@ $ npm run test
  curl --location 'http://localhost:3000/user/singIn' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "email": "sven@bk.ru",
+    "email": "babai@bk.ru",
     "password": "denis"
 }'
 
