@@ -1,0 +1,22 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": "../",
+  "modulePaths": ["<rootDir>"],
+  "testEnvironment": "node",
+  "testRegex": "./*.test-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^src$": "<rootDir>/src",
+    "^src/(.+)$": "<rootDir>/src/$1",
+    "^@test-project/exceptions": "<rootDir>/libs/exception",
+    "^@test-project/crypto": "<rootDir>/libs/crypto",
+    "^@test-project/guards": "<rootDir>/libs/guards"
+  },
+  "modulePathIgnorePatterns": ["src/typings"],
+  "testPathIgnorePatterns": [
+    "/node_modules./",
+    "<rootDir>/(coverage|dist|lib|tmp)./"
+  ]
+}
